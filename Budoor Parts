@@ -1,0 +1,314 @@
+1. Introduction and Project Scope
+1.1 Project Problem
+Universities may purchase new furniture, computers, laboratory equipment, and other resources while usable assets remain idle in different departments. Without an integrated platform, departments may struggle to identify available resources, coordinate requests and transfers, track maintenance, and maintain accurate asset histories. This can cause unnecessary spending, inefficient resource use, and increased waste.
+1.2 Project Objectives
+The following objectives are proposed targets rather than measured results:
+Objective	Target and timeframe	Measurement method
+Deliver the core workflow	Complete asset registration, publication, request, approval, and transfer by the final demonstration, with at least 90% of planned acceptance tests passing	Passed tests ÷ tests executed × 100
+Prepare evaluation data	Create 45 records—20 assets, 10 requests, 5 maintenance, 5 transfer, and 5 procurement records—before formal evaluation	Dataset count and validation report
+Ensure data completeness	Achieve 100% mandatory-field completeness before records enter evaluation	Complete accepted records ÷ records checked × 100
+Evaluate AI matching	Evaluate at least 30 recommendations from the 200 possible asset–request pairs and achieve at least 75% relevant recommendations by final testing	Relevant recommendations ÷ recommendations evaluated × 100
+Preserve human control	Require authorized university staff to approve 100% of controlled transfers and disposal-related decisions during testing	Audit-log review
+Demonstrate benefits	Produce operational, financial, and sustainability reports by the final demonstration	Report checklist and comparison with source records
+1.3 Proposed System
+The proposed system is an internal university platform for managing and sharing campus resources. Authorized users will be able to register assets, publish surplus items, search for resources, submit requests, manage approvals and transfers, record maintenance activities, and review asset histories. The platform will also provide reports about resource use, costs, savings, and sustainability outcomes.
+1.4 Prototype Scope
+The prototype will deliver the essential functions identified during Phase 1. Advanced functions may be implemented later if sufficient time and resources remain.
+Traditional Functions
+The traditional functions include:
+•	User authentication and role-based access control.
+•	Department and asset management.
+•	Publication of surplus or unused assets.
+•	Asset search and filtering.
+•	Resource requests and status tracking.
+•	Approval and transfer workflows.
+•	Asset ownership, location, and custody tracking.
+•	Maintenance and life-cycle records.
+•	Notifications and audit records.
+•	Basic financial, operational, and sustainability reports.
+Artificial Intelligence Functions
+The AI functions include:
+•	Classifying assets into suitable categories and tags.
+•	Matching available assets with departmental requests.
+•	Scoring and ranking suitable matches.
+•	Explaining why an asset was recommended.
+•	Identifying missing or incomplete asset information.
+•	Producing AI-generated summaries and reports.
+AI will support users rather than make final decisions. Authorized university staff will approve transfers, repairs, donations, recycling, and disposal.
+System exclusions
+The semester prototype will not include:
+•	Production-wide university deployment or migration of all university records.
+•	Live integration with university identity, procurement, finance, maintenance, or enterprise systems.
+•	Automatic purchasing, payment, transfer, donation, recycling, or disposal without human approval.
+•	Replacement of the university’s official asset register.
+•	Autonomous AI decisions or guaranteed recommendation accuracy.
+•	IoT or RFID tracking, sensor-based predictive maintenance, or a native mobile application.
+•	Production-level backup, monitoring, disaster recovery, security certification, or service-level guarantees.
+1.5 Main Stakeholders and Their Needs
+Department Representatives and Requesters
+They need to publish surplus assets, search for available resources, submit requests, and monitor request progress.
+Asset Custodians and Maintenance Staff
+They need accurate information about asset condition, location, custody, inspections, repairs, and maintenance history.
+University Administrators
+They need clear approval workflows, reliable records, and audit trails for important actions.
+Procurement and Finance Officers
+They need information about available resources, purchasing needs, asset values, costs, and estimated savings.
+Sustainability Officers
+They need information about reuse, repair, waste reduction, asset-life extension, and estimated environmental benefits.
+System Administrators
+They need secure tools for managing user accounts, roles, permissions, system settings, and technical logs.
+Project Team and Course Staff
+The project team needs clear requirements, suitable development tools, sample data, and regular feedback. The instructor and lab engineer need access to project documents, the prototype, testing results, and the GitHub repository.
+1.6 Main Assumptions
+The project is based on the following assumptions:
+•	University departments will be willing to share and reuse resources.
+•	Users will provide accurate and updated asset information.
+•	Authorized personnel will review and approve important actions.
+•	Users will have internet access and basic computer skills.
+•	The team will have access to suitable development tools and sample data.
+•	AI recommendations will be reviewed by users before decisions are made.
+1.7 Main Constraints
+Budget
+The project must remain within the available student-project budget. The team will prioritize university-provided, open-source, and free-tier tools.
+Time
+The prototype must be completed within the semester schedule. Essential functions will be prioritized before desirable or advanced features.
+Team Size and Skills
+The project will be completed by a three-member team. The selected technologies must be manageable using the team’s current technical skills and the available learning time.
+Tools and Technology
+Git and GitHub must be used for version control and collaboration. The project also requires appropriate development, database, testing, interface-design, diagramming, and AI tools.
+Data Access
+Access to real university asset records may be restricted because of privacy and confidentiality requirements. Realistic sample data will therefore be used unless official access is provided. The accuracy of AI recommendations and sustainability estimates will depend on the quality and quantity of the available data.
+2. Market and Operational Feasibility
+2.1 Need for the Proposed System and Interview Findings
+Universities manage large numbers of assets, including furniture, computers, laboratory equipment, and office supplies. Some of these assets may remain unused in one department while another department purchases similar resources. When asset information is stored in separate files or communicated through emails, departments may find it difficult to identify available items, coordinate transfers, and maintain accurate records. The proposed system addresses this problem by providing a centralized platform for asset registration, internal sharing, requests, approvals, transfers, maintenance, and reporting.
+The proposed system also supports the university’s sustainability objectives. Khalifa University’s 2025 sustainability report identifies green procurement, resource efficiency, and waste reduction as important areas of campus operations. Therefore, a system that supports asset reuse and tracks avoided purchases and waste could contribute to these objectives [10].
+The main users would be department representatives, asset custodians, employees requesting resources, university administrators, maintenance teams, procurement staff, finance staff, sustainability officers, and system administrators. Each group would use the system for different activities, but they would share the objective of improving the use and management of university resources.
+
+Interview Summary
+The two simulated interviews showed that the proposed system could improve university asset management by centralizing records, helping departments find unused resources, and simplifying requests, approvals, maintenance, and transfers. Stakeholders supported AI for asset classification and matching, but all-important decisions must remain under human control. Key requirements include accurate data, role-based access, clear responsibilities, approval workflows, audit trails, notifications, financial and sustainability reports, staff training, and special handling of restricted assets. These simulated findings must be confirmed through real stakeholder interviews before being presented as actual evidence.
+2.2 Comparison with Existing Systems
+Three systems relevant to the proposed project are Rheaply, Warp It, and IBM Maximo Application Suite. Rheaply and Warp It support organizational resource reuse, while Maximo focuses on enterprise asset life-cycle and maintenance management. The proposed system combines selected reuse, maintenance, and AI functions in a smaller university-focused prototype.
+Rheaply provides centralized asset information, internal reuse, approval workflows, redeployment, audit trails, and sustainability reporting. Its platform is designed to help organizations understand what they own, identify idle resources, and reduce unnecessary purchasing [11].
+Warp It is an organizational reuse platform used by universities, government departments, healthcare organizations, and other institutions. It allows users to list surplus resources, search for items, submit claims, manage approvals, and measure financial and environmental outcomes. It also provides an AI-assisted listing function that can suggest an item’s title, category, and value from a photograph [12].
+IBM Maximo Application Suite combines asset and facilities management with maintenance, inspections, reliability, and AI-supported decision-making. It is relevant because it demonstrates integrated asset life-cycle and maintenance capabilities, although its enterprise scope and deployment requirements are greater than those of a semester prototype .
+
+
+
+Table 1
+Comparison of the Proposed System with Existing Systems
+Feature	Proposed System	Rheaply	Warp It	IBM Maximo
+Central asset records	Yes	Yes	Mainly reuse listings	Yes
+Internal resource exchange	Yes	Yes	Yes	Not emphasized
+Requests and approvals	Yes	Yes	Yes	Workflow support
+Maintenance tracking	Basic prototype	Not emphasized	Not emphasized	Strong enterprise focus
+Asset life-cycle history	Yes	Yes	Limited public emphasis	Yes
+Sustainability or reuse reporting	Yes	Yes	Yes	Asset-performance reporting; reuse is not the main focus
+AI support	Classification, matching, ranking, explanations, assistant, and summaries	Reuse and matching support	AI-assisted listings	AI-supported asset and maintenance decisions
+Main limitation for this project	Semester-scale prototype	Maintenance depth is not emphasized publicly	Full maintenance history is not emphasized publicly	Enterprise complexity exceeds the prototype scope
+Note. The comparison is based on publicly available descriptions from the official Rheaply, Warp It, and IBM Maximo websites. “Not emphasized” means that a feature was not clearly presented as a main function in the reviewed public information; it does not prove that the feature is unavailable.
+The comparison shows that there is an established need for organizational reuse and asset-management platforms. Liverpool’s use of Warp It, discussed below, is adoption evidence for Warp It and is not counted as a third comparison system. The proposed system differs by combining resource exchange, maintenance records, complete asset histories, sustainability measurements, and explainable AI recommendations within one university-focused prototype.
+2.3 Evidence of University Adoption
+A real example of university adoption is the University of Liverpool’s use of Warp It. The university made the platform available to its staff for listing, requesting, and claiming unwanted furniture, equipment, laboratory resources, and stationery. Shortly after its introduction, the university reported that 263 staff members had registered, 181 items had been exchanged, £27,248 had been saved, and more than three tonnes of waste had been avoided [13].
+The same case also demonstrates that operational responsibilities must be assigned clearly. University staff list and claim items, while the Mail and Transport team manages the collection and movement of claimed resources. The university also requires users to obtain authorization before listing an item and excludes IT-issued assets, data-holding devices, confidential items, and hazardous materials from the general reuse process.
+This example does not prove that Khalifa University would achieve the same results. However, it provides evidence that university employees can adopt a digital reuse workflow when responsibilities, permissions, transportation, and training support are clearly defined.
+2.4 Operational Adoption by Stakeholders
+Departments
+Departments could adopt the system by assigning one or more representatives to manage their resource listings and requests. Department representatives would identify unused resources, submit requests, update information, and coordinate handovers. Departments would also need to confirm that an item is no longer required before making it available to others.
+Asset Custodians
+Asset custodians would be responsible for maintaining accurate information about asset ownership, location, condition, availability, and custody. Before a transfer is completed, the custodian would confirm that the item exists, is suitable for transfer, and has been correctly described. Custodians would also record the handover and update the asset’s location and responsible department.
+University Administrators
+Administrators would review requests and approve controlled actions. The exact approval level may depend on the type, value, condition, or sensitivity of an asset. High-value assets, disposal decisions, donations, and transfers involving restricted equipment may require additional approval.
+Maintenance Teams
+Maintenance staff could use the system to receive inspection or repair requests, review asset histories, record faults, update repair progress, and confirm whether an item is ready for reuse. This workflow would replace or supplement separate maintenance records. Integration with an existing maintenance system may be required if the university already uses one.
+Procurement Staff
+Procurement staff could check whether an appropriate reusable asset is available before approving a new purchase. They could also review unsuccessful requests to identify resources that still need to be purchased. This would make reuse part of the procurement process rather than an optional activity completed after a purchase request has already been approved.
+Sustainability Officers
+Sustainability officers could review information about reused items, repaired assets, avoided purchases, waste diversion, and estimated carbon-emission reductions. They would also be responsible for reviewing the assumptions and calculation methods used in sustainability reports.
+Overall, these workflows appear operationally feasible because they are connected to activities that these stakeholder groups already perform. The system would mainly centralize the information and improve coordination between them. However, the proposed roles and approval levels would need to be validated with actual university representatives before implementation.
+2.5 Responsibilities and Approvals
+Clear responsibilities would be required to prevent inaccurate records and unauthorized transfers. A suggested responsibility structure is as follows:
+Activity	Primary Responsibility	Approval Required
+Register or update an asset	Asset custodian or authorized department representative	Not normally required
+Publish a surplus asset	Department representative or asset custodian	Department confirmation
+Submit a resource request	Authorized requester	Department confirmation where required
+Approve a transfer	University administrator	Yes
+Update custody and location	Asset custodian	Transfer approval must already exist
+Record inspection or repair	Maintenance staff	Maintenance authorization where required
+Approve a new purchase	Procurement or finance staff	Existing university approval process
+Approve donation, recycling, or disposal	Authorized administrator	Yes
+Review sustainability calculations	Sustainability officer	Review before formal reporting
+Manage accounts and permissions	System administrator	Authorized role request
+AI-generated classifications, matches, and recommendations would not replace these responsibilities. Users would be allowed to accept, correct, or reject AI results. Important actions would remain subject to human approval.
+2.6 Training Requirements
+The following training estimates are planning assumptions. They are not based on a completed survey, interview, or usability test.
+Table 2
+Estimated Training Requirements
+User Group	Estimated Training per Person	Main Training Topics
+General requesters	1–1.5 hours	Searching, requesting, and tracking
+Department representatives	2–3 hours	Listings, requests, and handovers
+Asset custodians	3 hours	Asset records, condition, custody, and transfers
+Administrators and procurement staff	2 hours	Reviews, approvals, costs, and audit records
+Maintenance staff	2–3 hours	Inspections, repairs, and status updates
+Sustainability officers	2 hours	Indicators, reports, and calculation assumptions
+System administrators	4–5 hours	Accounts, permissions, configuration, and support
+Short user guides and demonstration videos could support the training. Refresher sessions may also be needed after the pilot identifies common user errors. More training would be required for system administrators and asset custodians because they manage sensitive information and important system records.
+2.7 Estimated Pilot Size
+Khalifa University publicly identifies three academic colleges: the College of Engineering and Physical Sciences, the College of Computing and Mathematical Sciences, and the College of Medicine and Health Sciences [10].
+The following figures are assumptions for planning a prototype pilot and are not confirmed university figures:
+•	One participating department from each college: 3 departments
+•	Five to eight users from each participating department: 15–24 departmental users
+•	Eight to twelve central users from administration, procurement, maintenance, sustainability, finance, and IT
+•	Estimated total pilot population: 23–36 users
+A small pilot would allow the university to test the workflows, approval rules, data fields, training materials, and AI recommendations before considering a wider rollout. The actual number of users and departments would need to be confirmed by the university.
+2.8 Possible Adoption Difficulties
+The main adoption difficulties may include:
+•	Departments may continue using email or informal communication.
+•	Employees may consider asset registration an additional workload.
+•	Asset information may be incomplete, inaccurate, or outdated.
+•	Departments may be unwilling to release assets that they may need later.
+•	Approval responsibilities may be unclear or require several management levels.
+•	The system may duplicate functions available in existing procurement or maintenance systems.
+•	Users may not trust AI recommendations or understand their explanations.
+•	Restricted, confidential, hazardous, or data-holding equipment may require separate procedures.
+•	Environmental estimates may be unreliable if cost, weight, material, or carbon data are unavailable.
+•	Some users may require additional training or technical support.
+These difficulties could be reduced through a limited pilot, clear responsibility assignments, simple data-entry forms, management support, role-based training, written approval rules, and integration with existing university procedures. The system should also provide normal search and request functions when its AI services are unavailable.
+2.9 Feasibility Conclusion
+The proposed system is operationally feasible if the university clearly assigns responsibilities, defines approval levels, provides training, and introduces the system gradually. Existing systems such as Rheaply and Warp It demonstrate that internal resource reuse and sustainability reporting are practical organizational functions. The University of Liverpool case further shows that university employees can adopt similar workflows and achieve measurable reuse outcomes.
+The proposed system offers additional value by combining internal exchange with maintenance tracking, complete asset histories, sustainability reporting, and AI-supported classification and matching. A pilot involving approximately three departments and 23–36 users would provide a practical way to evaluate adoption before a university-wide implementation.
+3. Technical Feasibility
+3.1 Proposed Technical Approach
+The proposed system can be developed as a web-based application using a three-layer architecture. The presentation layer will provide the user interface, the application layer will manage business rules and communication with external services, and the data layer will store asset, user, request, maintenance, and reporting information.
+Web architecture is suitable because users from different university departments can access the system through a browser without installing separate desktop software. It also allows the development team to update the prototype from one central location.
+The proposed prototype will use Next.js and TypeScript for the user interface and application logic. Supabase will provide a PostgreSQL database, authentication, file storage, and application programming interfaces. PostgreSQL can store the structured system records, while the pgvector extension can store numerical embeddings used for semantic search. An external AI service, such as the OpenAI API, can provide asset classification, description generation, semantic embeddings, recommendation explanations, and report summaries.
+3.2 Proposed Components
+Table 3
+Proposed Technical Components
+Component	Proposed Tool	Reason	Main Limitation
+System architecture	Three-layer web architecture	Separates the interface, application logic, and data	Requires clear interfaces between layers
+Frontend	Next.js with TypeScript	Supports responsive web interfaces and can be deployed easily	The team may need additional TypeScript and framework training
+Backend logic	Next.js server functions or API routes	Keeps the prototype within one main programming environment	Long or complex background tasks may require a separate service
+Database	PostgreSQL through Supabase	Suitable for users, assets, requests, approvals, and maintenance records	The free plan provides only 500 MB of database space
+Authentication	Supabase Authentication	Supports secure login and role-related application logic	Advanced enterprise single sign-on is not included in the free plan
+Semantic search	PostgreSQL with pgvector	Stores embeddings and supports similarity searches	Search quality depends on good descriptions and embeddings
+File storage	Supabase Storage	Stores asset photographs and supporting documents	The free plan provides 1 GB of file storage
+AI services	OpenAI API	Supports classification, embeddings, recommendations, explanations, and summaries	Requires internet access, API credentials, usage monitoring, and payment when free credits are unavailable
+Reporting	PostgreSQL queries and a JavaScript chart library	Allows operational, financial, and sustainability reports	Results depend on complete and accurate source data
+Frontend hosting	Vercel	Integrates with GitHub and supports automatic deployment	Free-plan runtime and deployment limits apply
+Version control	Git and GitHub	Supports collaboration, branches, reviews, and contribution tracking	Team members must follow a consistent branching and commit process
+Development hardware	Team laptops	Sufficient for browser-based development and testing	Older devices may be slow when running several services locally
+Testing	Automated unit tests and browser-based testing tools	Supports repeatable testing of workflows	The team must allocate time to prepare and maintain test cases
+3.3 Architecture and Integration Feasibility
+The frontend will communicate with the database and backend functions through secure APIs. Users will sign in before accessing system functions, and role-based rules will determine which records and actions they can access. Asset photographs and documents will be stored separately from the structured database records.
+The main integrations required for the prototype are:
+•	Authentication and user-role management
+•	Database and file-storage access
+•	AI classification and text-generation requests
+•	Embedding generation for semantic search
+•	Email or in-system notifications
+•	Exporting reports in formats such as CSV or PDF
+•	GitHub integration for deployment and version control
+These integrations are technically achievable through documented APIs. However, integration with existing university procurement, maintenance, finance, or identity-management systems should not be assumed during the prototype. Such integration would require technical documentation, test accounts, security approval, and cooperation from university IT staff. The prototype should therefore use its own controlled workflows and sample data while keeping the interfaces modular enough for future integration.
+3.4 AI and Semantic Search Feasibility
+The proposed technology can support the required AI functions. Asset information and images can be sent to an AI service to suggest categories, tags, and standardized descriptions. The system can then present these suggestions to an authorized user for review before saving them.
+Semantic search can be implemented by converting asset descriptions and resource requests into embeddings. The embeddings can be stored in PostgreSQL using pgvector and compared using cosine distance. Supabase documents the use of HNSW indexes for approximate nearest-neighbor searches over high-dimensional vectors. Its current documentation states that the standard vector type can be indexed up to 2,000 dimensions, which is sufficient for many embedding models [7].
+The matching process can combine semantic similarity with structured information such as category, quantity, condition, location, urgency, and availability. The system can then calculate a combined score and present the highest-ranked assets. AI-generated explanations may summarize the main reasons for each recommendation, but they should not be treated as final decisions.
+AI feasibility is subject to several limitations. API services require a reliable internet connection and may impose account-specific rate limits. Service prices and limits may also change. AI outputs may be incomplete or incorrect, particularly when asset descriptions or photographs are unclear. The system should therefore validate inputs, display confidence or matching information where possible, record the model used, and allow users to correct or reject every AI recommendation.
+3.5 Reporting Feasibility
+The database can support operational reports about assets, requests, approvals, transfers, maintenance activities, and status changes. Financial reports can use recorded purchase values, repair costs, transfer costs, and avoided-purchase estimates. Sustainability reports can use information such as item quantity, weight, reuse status, repair status, and estimated carbon factors.
+Basic reports can be generated using SQL queries and displayed with a JavaScript chart library. AI may be used to produce short written summaries, but the numerical results should be calculated using defined formulas rather than generated directly by the AI model.
+The main reporting limitation is data quality. Financial savings and environmental benefits cannot be calculated accurately when asset values, weights, material types, or conversion factors are missing. The prototype should clearly label estimates and store the source, formula, and assumptions used for each sustainability calculation.
+3.6 Hosting and Service Limits
+The prototype can use Supabase’s free plan for the database, authentication, and file storage. As of September 2026, the free plan includes:
+•	500 MB of database storage
+•	1 GB of file storage
+•	5 GB of standard egress
+•	5 GB of cached egress
+•	50,000 monthly active users
+•	A maximum file-upload size of 50 MB
+•	500,000 Edge Function invocations
+•	Pausing after one week of inactivity
+These limits are more than sufficient for a small student prototype, but the lack of automatic backups, the one-day log-retention period, and project pausing make the free plan unsuitable for a production university system [7].
+The frontend can be hosted on Vercel’s Hobby plan. Vercel currently limits Hobby accounts to 100 deployments per day, 100 MB of static source-file uploads per deployment, one concurrent deployment, and one hour of runtime-log retention. The platform also applies a 120-second timeout to proxied requests [15].These limits are acceptable for a prototype but may affect long-running AI requests, large uploads, or detailed operational monitoring.
+AI API rate limits depend on the selected model and the account’s usage tier. Therefore, the development team should check the current limits in the service dashboard, restrict unnecessary calls, cache generated results, and handle rate-limit errors. The prototype should also preserve its normal search, request, approval, and reporting functions when the AI service is unavailable.
+3.7 Estimated Data and Storage Requirements
+The following estimates are planning assumptions and are not based on actual university asset records.
+Prototype capacity scenario
+The 500-asset figure below is a storage-capacity scenario used to test the proposed service limits. It is not the 45-record evaluation dataset and is not a confirmed university pilot size.
+•	500 asset records
+•	Two photographs per asset
+•	Average photograph size of 400 KB after compression
+•	100 supporting documents with an average size of 500 KB
+•	2,000 request, approval, transfer, and maintenance records
+•	One embedding for each asset and request description
+Estimated storage
+Data Type	Calculation	Estimated Size
+Asset metadata	500 records × approximately 10 KB	5 MB
+Workflow records	2,000 records × approximately 5 KB	10 MB
+Embeddings and indexes	Estimated allowance	10–20 MB
+Asset photographs	500 assets × 2 × 400 KB	400 MB
+Supporting documents	100 documents × 500 KB	50 MB
+Estimated capacity-scenario total	Including a small safety allowance	Approximately 500–600 MB
+Under this capacity scenario, the database portion would remain well below Supabase’s 500 MB database limit because photographs and documents would be stored in file storage. The estimated file usage of approximately 450 MB would also remain below the 1 GB free storage limit.
+A larger deployment would require a paid plan or another storage service. For example, 5,000 assets with three photographs of 500 KB each would require approximately 7.5 GB for photographs alone. This would exceed the Supabase free-plan storage limit.
+3.8 Team Skills and Learning Requirements
+Phase 1 states that the project will be completed by a three-member team using Git and GitHub. The exact technical experience of each member has not yet been formally measured. For feasibility planning, it is assumed that the team has basic knowledge of programming, databases, web development, software engineering, and version control.
+The team would need additional learning in the following areas:
+•	Next.js and TypeScript development
+•	PostgreSQL database design and SQL
+•	Authentication and role-based access control
+•	Supabase configuration and security policies
+•	API development and integration
+•	AI prompting and structured outputs
+•	Embeddings and semantic search
+•	Deployment, monitoring, and error handling
+•	Automated testing and secure handling of API keys
+The following estimates are planning assumptions. They do not represent completed training or measured team performance.
+Table 4
+Estimated Learning and Integration Effort
+Area	Focused Learning Hours	Implementation and Integration Hours	Total
+Next.js and TypeScript	8	12	20
+Supabase, PostgreSQL, and authentication	8	12	20
+Role-based permissions and security	4	10	14
+AI API and structured outputs	6	10	16
+Embeddings and semantic search	6	10	16
+File storage and document handling	2	5	7
+Reporting and charts	3	7	10
+Hosting and deployment	2	4	6
+Testing and integration debugging	4	16	20
+Estimated total	43 hours	86 hours	129 team hours
+The minimum viable prototype is therefore estimated at 129 team hours. Section 7 uses the same estimate against 162 available team hours, leaving a 33-hour contingency buffer: 162 − 129 = 33 hours. This estimate assumes focused learning, work divided according to team strengths, reuse of documented examples, and exclusion of the out-of-scope functions in Section 1.4. If the estimate proves too low, optional polish should be reduced while preserving the core workflows and required AI classification, semantic matching, ranking, explanations, sustainable-action recommendations, assistant, and generated reports.
+3.9 Available Resources
+The main resources required for the prototype are:
+•	Three development laptops
+•	Reliable internet access
+•	GitHub accounts and a shared repository
+•	Free or student-level hosting services
+•	A managed PostgreSQL database
+•	Sample asset and workflow data
+•	An AI API account with controlled usage
+•	Browser-based development and testing tools
+•	Access to technical documentation and tutorials
+The proposed stack does not require specialized servers or high-performance local hardware because the database, storage, and AI processing can be hosted externally. A laptop with at least 8 GB of RAM, a modern multi-core processor, and several gigabytes of free disk space should be sufficient for normal development. This is a planning recommendation rather than a strict platform requirement.
+3.10 Major Technical Limitations
+The main technical limitations are:
+•	The free hosting plans are intended for prototypes rather than production systems.
+•	AI services require internet access and may create unpredictable costs.
+•	API rate limits or service outages may temporarily disable AI functions.
+•	Limited access to university systems may prevent real integration.
+•	Sample data may not represent the quality or scale of real university records.
+•	Semantic matching quality depends on accurate asset descriptions and requests.
+•	Image classification may be unreliable when photographs are unclear.
+•	Sustainability calculations depend on external data and documented assumptions.
+•	The team has limited time to learn several new technologies.
+•	A three-member team may not be able to implement every proposed function fully.
+•	Production deployment would require stronger backup, monitoring, security, privacy, and availability controls.
+These limitations can be reduced by prioritizing essential workflows, using modular components, compressing uploaded images, caching AI results, maintaining non-AI fallback functions, and testing integrations early.
+3.11 Technical Feasibility Conclusion
+The proposed system is technically feasible as a student prototype. A web application using Next.js, TypeScript, Supabase, PostgreSQL, pgvector, Vercel, GitHub, and an external AI API can support the required asset workflows, semantic search, AI assistance, reporting, and basic integrations.
+The proposed free hosting services provide sufficient capacity for the 500-asset storage scenario in Section 3.7 and approximately 23–36 pilot users. The 500-asset figure is a planning scenario, not the formal evaluation dataset or a confirmed university deployment size. The free plans would not be suitable for a full university deployment because of storage, backup, monitoring, reliability, security, and support limitations.
+The greatest technical risks are the team’s learning requirements, integration complexity, AI reliability, limited access to university systems, and the available semester time. The project should therefore implement traditional asset-management functions first and add AI features gradually after the core workflows are stable.
+
+
+
+
